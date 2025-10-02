@@ -1,0 +1,55 @@
+/* Reset & Base Styles */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, img, 
+b, u, i, center, table, tr, th, td, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Typography */
+.t-body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Layout Grid System */
+.t-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+}
+
+.t-container.flexx,
+.t-container_flex {
+  display: flex;
+}
+
+.t-container_100 { width: 100%; }
+.t-container_10 { max-width: 1000px; }
+.t-container_8 { max-width: 800px; }
+
+/* Grid Columns */
+.t-col {
+  display: inline;
+  float: left;
+  margin: 0 20px;
+  width: 100%;
+}
+
+.t-col.flexx {
+  align-items: stretch;
+  height: inherit;
+  margin: auto 20px;
+}
+
+/* Column Widths */
+.t-col_1 { max-width: 60px; }
+.t-col_2 { max-width: 160px; }
+.t-col_3 { max-width: 260px; }
+/* ... other column widths ... */ 

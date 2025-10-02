@@ -1,0 +1,76 @@
+/* WhatsApp Float Button */
+#whatsapp-float {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25D366;
+  border-radius: 20px;
+  padding: 8px 20px 8px 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+#whatsapp-float span {
+  margin-left: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+#whatsapp-float img {
+  width: 40px;
+  height: auto;
+}
+
+/* Calendar Components */
+.calendar-container {
+  position: relative;
+}
+
+.calendar-container__form {
+  max-width: 469px;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+/* Form Elements */
+.calendar-container__button,
+.calendar-container__sessions {
+  height: 50px;
+  width: 250px;
+  margin: 21px auto 0;
+  padding: 0 15px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fcf9f9;
+  border: 1px solid #fcf9f9;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.calendar-container__button {
+  background-color: #6b6666;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Select Styles */
+.t-select__wrapper {
+  position: relative;
+}
+
+.t-select__wrapper:after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 8px solid transparent;
+  border-top-color: #fcf9f9;
+  border-top-width: 10px;
+  pointer-events: none;
+} 

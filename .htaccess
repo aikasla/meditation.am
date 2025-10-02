@@ -1,0 +1,38 @@
+ErrorDocument 403 /404.html
+ErrorDocument 404 /404.html
+
+DirectoryIndex page37877034.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^guidance$ page37174738.html [NC]
+RewriteRule ^guidance/$ page37174738.html [NC]
+
+RewriteRule ^homepage$ page37271155.html [NC]
+RewriteRule ^homepage/$ page37271155.html [NC]
+
+RewriteRule ^backup$ page37569570.html [NC]
+RewriteRule ^backup/$ page37569570.html [NC]
+
+RewriteRule ^testing_ground$ page37667166.html [NC]
+RewriteRule ^testing_ground/$ page37667166.html [NC]
+
+RewriteRule ^testing_ground_2$ page37682849.html [NC]
+RewriteRule ^testing_ground_2/$ page37682849.html [NC]
+
+RewriteRule ^testing_ground_3$ page37820700.html [NC]
+RewriteRule ^testing_ground_3/$ page37820700.html [NC]
+
+RewriteRule ^testtest$ page38583328.html [NC]
+RewriteRule ^testtest/$ page38583328.html [NC]
+
+RewriteRule ^gtag$ page39004386.html [NC]
+RewriteRule ^gtag/$ page39004386.html [NC]
+
+

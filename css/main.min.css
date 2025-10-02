@@ -1,0 +1,142 @@
+/* Core styles and resets */
+*, *:before, *:after {
+  box-sizing: border-box; /* Changed from content-box for better layout control */
+}
+
+/* Base element resets */
+div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, img, b, u, i, 
+center, table, tr, th, td, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Typography */
+.t-body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Layout containers */
+.t-container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0;
+}
+
+/* Flex containers */
+.t-container.flexx,
+.t-container_flex {
+  display: flex;
+}
+
+/* Container variants */
+.t-container_100 { width: 100%; }
+.t-container_10 { max-width: 1000px; }
+.t-container_8 { max-width: 800px; }
+
+/* WhatsApp float button */
+#whatsapp-float {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25D366;
+  border-radius: 20px;
+  padding: 8px 20px 8px 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+#whatsapp-float span {
+  margin-left: 5px;
+  font-size: 16px;
+  color: white;
+}
+
+#whatsapp-float img {
+  width: 40px;
+  height: auto;
+}
+
+/* Calendar styles */
+.calendar-container {
+  position: relative;
+}
+
+.calendar-container__form {
+  max-width: 469px;
+  width: 100%;
+  margin: 20px auto 0;
+}
+
+/* Form elements */
+.calendar-container__button,
+.calendar-container__sessions {
+  height: 50px;
+  width: 250px;
+  margin: 21px auto 0;
+  padding: 0 15px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fcf9f9;
+  border: 1px solid #fcf9f9;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease all;
+}
+
+.calendar-container__button {
+  background-color: #6b6666;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Select wrapper */
+.t-select__wrapper {
+  position: relative;
+}
+
+.t-select__wrapper:after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 8px solid transparent;
+  border-top-color: #fcf9f9;
+  border-top-width: 10px;
+  pointer-events: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  #whatsapp-float {
+    bottom: 26px;
+    right: 26px;
+    padding: 6.4px 16px 6.4px 12px;
+    font-size: 12.8px;
+  }
+  
+  #whatsapp-float img {
+    width: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .calendar-container__sessions,
+  .calendar-container__button {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 430px) {
+  .calendar-container__sessions {
+    text-align: left;
+    padding-left: 96px;
+  }
+} 

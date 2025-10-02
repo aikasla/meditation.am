@@ -1,0 +1,208 @@
+#whatsapp-float {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25D366;
+    border-radius: 20px; /* Reduced border-radius for less curvature */
+    text-align: center;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjusted shadow for more consistent appearance */
+    display: flex;
+    align-items: center;
+    padding: 8px 20px 8px 15px; /* Adjusted padding for a thinner rectangle */
+    z-index: 100;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+#whatsapp-float span {
+    margin-left: 5px; /* Space between icon and text */
+    font-size: 16px;
+    color: white;
+}
+
+#whatsapp-float img {
+    width: 40px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #whatsapp-float {
+        bottom: 26px; /* 35% smaller than 40px */
+        right: 26px; /* 35% smaller than 40px */
+        padding: 6.4px 16px 6.4px 12px; /* 20% smaller padding */
+        font-size: 12.8px; /* 20% smaller text */
+    }
+
+    #whatsapp-float img {
+        width: 30px; /* 25% smaller icon */
+    }
+}
+
+
+.calendar-container cal-inline {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+}
+
+.calendar-container__form {
+    max-width: 469px;
+    width: 100%;
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+.t396__artboard {
+    overflow: visible;
+}
+
+[data-elem-type="button"] {
+    cursor: pointer;
+}
+
+.calendar-container__button {
+    text-align: center;
+    height: 60px;
+    border: 0 none;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 21px;
+    white-space: nowrap;
+    background-image: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+    background: transparent;
+    padding: 0px 15px;
+    display: block;
+    width: 250px;
+    font-weight: 400;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 5px 0px;
+    color: #fcf9f9;
+    border-radius: 0px;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: bold;    
+    cursor: pointer;
+    background-color: #6b6666;
+    transition: 0.3s ease all;
+    position: relative;
+}
+
+.calendar-container__sessions {
+    outline: none;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    border-top: 0!important;
+    border-right: 0!important;
+    border-left: 0!important;
+    margin-top: -32px;
+    background-color: transparent!important;
+    border-radius: 0!important;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: pointer;
+    height: 60px;
+    padding: 0 45px 0 20px;
+    font-size: 16px;
+    line-height: 1.33;
+    outline: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    appearance: none;
+    color: rgb(252, 249, 249);
+    border: 1px solid rgb(252, 249, 249);
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: bold;
+    height: 50px;
+    font-family: "Inter";
+    text-align: center;
+}
+
+@media screen and (min-width: 390px) and (max-width: 400px) {
+    .calendar-container__sessions {
+        text-align: left !important;
+        padding-left: 96px !important;
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 430px) {
+    .calendar-container__sessions {
+        text-align: left !important;
+        padding-left: 97px !important;
+    }
+}
+
+.t-select__wrapper {
+    position: relative;
+}
+
+.t-select__wrapper:after {
+    border-top-color: #fcf9f9;
+}
+.t-select__wrapper_bbonly::after {
+    right: 5px!important;
+}
+.t-select__wrapper:after {
+    content: ' ';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 8px 0 8px;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    position: absolute;
+    right: 20px;
+    top: 2%;
+    bottom: 0;
+    margin: auto;
+    pointer-events: none;
+}
+
+
+.calendar-container__sessions option {
+    color: #000;
+    background-color: #fff;
+    font-size: 16px;
+}
+
+.hidden-box {
+    display: none;
+}
+
+cal-modal-box {
+    visibility: hidden;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .calendar-container__sessions {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    /*#rec602178290 {*/
+    /*    padding-top: 140px;*/
+    /*    margin-top: -140px;*/
+    /*}*/
+    
+    .calendar-container__button {
+        font-size: 14px;
+    }
+}
+
+
+/*@media screen and (max-width: 375px) {*/
+/*    #rec602178290 {*/
+/*        padding-top: 120px;*/
+/*        margin-top: -120px;*/
+/*    }*/
+/*}*/
+
